@@ -1,0 +1,2588 @@
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF696C8EB2F в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF696DDE8D0 (64-bit), Flags: Cmdre0, Thread: 0x21E0 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 01:25:16, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 01:25:24
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: signal (4, 0x00): SIGILL: Попытка выполнить недопустимую операцию. Проверьте указатели на функции. 
+
+Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF696C8EB2F в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF696DDE8D0 (64-bit), Flags: Cmdre0, Thread: 0x21E0 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 01:25:16, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 01:25:24
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF753F2EB34 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF75407E8D0 (64-bit), Flags: Cmdre0, Thread: 0x2470 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 01:28:26, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 01:28:41
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: signal (4, 0x00): SIGILL: Попытка выполнить недопустимую операцию. Проверьте указатели на функции. 
+
+Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF753F2EB34 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF75407E8D0 (64-bit), Flags: Cmdre0, Thread: 0x2470 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 01:28:26, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 01:28:41
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF76F68EB34 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF76F7DE8D0 (64-bit), Flags: Cmdre0, Thread: 0x2AF8 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 01:29:31, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 01:29:54
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: signal (4, 0x00): SIGILL: Попытка выполнить недопустимую операцию. Проверьте указатели на функции. 
+
+Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF76F68EB34 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF76F7DE8D0 (64-bit), Flags: Cmdre0, Thread: 0x2AF8 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 01:29:31, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 01:29:54
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF71533EB14 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF71548E8D0 (64-bit), Flags: Cmdre0, Thread: 0x1F28 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 01:31:06, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 01:31:14
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: signal (4, 0x00): SIGILL: Попытка выполнить недопустимую операцию. Проверьте указатели на функции. 
+
+Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF71533EB14 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF71548E8D0 (64-bit), Flags: Cmdre0, Thread: 0x1F28 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 01:31:06, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 01:31:14
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF7CF00EB34 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF7CF15E8D0 (64-bit), Flags: Cmdre0, Thread: 0x9F4 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 01:33:55, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 01:34:02
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: signal (4, 0x00): SIGILL: Попытка выполнить недопустимую операцию. Проверьте указатели на функции. 
+
+Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF7CF00EB34 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF7CF15E8D0 (64-bit), Flags: Cmdre0, Thread: 0x9F4 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 01:33:55, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 01:34:02
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF7CF00EB34 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF7CF15E8D0 (64-bit), Flags: Cmdre0, Thread: 0x2A24 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 01:33:55, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 01:34:17
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: signal (4, 0x00): SIGILL: Попытка выполнить недопустимую операцию. Проверьте указатели на функции. 
+
+Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF7CF00EB34 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF7CF15E8D0 (64-bit), Flags: Cmdre0, Thread: 0x2A24 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 01:33:55, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 01:34:17
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF7CF00EB34 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF7CF15E8D0 (64-bit), Flags: Cmdre0, Thread: 0x29E4 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 01:33:55, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 01:34:21
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: signal (4, 0x00): SIGILL: Попытка выполнить недопустимую операцию. Проверьте указатели на функции. 
+
+Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF7CF00EB34 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF7CF15E8D0 (64-bit), Flags: Cmdre0, Thread: 0x29E4 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 01:33:55, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 01:34:21
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF7CF00EB34 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF7CF15E8D0 (64-bit), Flags: Cmdre0, Thread: 0x2BCC (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 01:33:55, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 01:34:39
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: signal (4, 0x00): SIGILL: Попытка выполнить недопустимую операцию. Проверьте указатели на функции. 
+
+Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF7CF00EB34 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF7CF15E8D0 (64-bit), Flags: Cmdre0, Thread: 0x2BCC (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 01:33:55, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 01:34:39
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF66C00EB34 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF66C15E8D0 (64-bit), Flags: Cmdre0, Thread: 0x266C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 01:34:45, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 01:34:54
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: signal (4, 0x00): SIGILL: Попытка выполнить недопустимую операцию. Проверьте указатели на функции. 
+
+Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF66C00EB34 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF66C15E8D0 (64-bit), Flags: Cmdre0, Thread: 0x266C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 01:34:45, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 01:34:54
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF77113EB34 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF77128E8D0 (64-bit), Flags: Cmdre0, Thread: 0x2348 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 01:43:23, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 01:43:30
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: signal (4, 0x00): SIGILL: Попытка выполнить недопустимую операцию. Проверьте указатели на функции. 
+
+Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF77113EB34 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF77128E8D0 (64-bit), Flags: Cmdre0, Thread: 0x2348 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 01:43:23, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 01:43:31
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF6E0B2EB34 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF6E0C7E8D0 (64-bit), Flags: Cmdre0, Thread: 0xD7C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 01:44:34, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 01:44:44
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: signal (4, 0x00): SIGILL: Попытка выполнить недопустимую операцию. Проверьте указатели на функции. 
+
+Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF6E0B2EB34 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF6E0C7E8D0 (64-bit), Flags: Cmdre0, Thread: 0xD7C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 01:44:34, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 01:44:44
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF6F8DCEB43 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF6F8F1E8D0 (64-bit), Flags: Cmdre0, Thread: 0x1418 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 01:45:39, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 01:45:54
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: signal (4, 0x00): SIGILL: Попытка выполнить недопустимую операцию. Проверьте указатели на функции. 
+
+Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF6F8DCEB43 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF6F8F1E8D0 (64-bit), Flags: Cmdre0, Thread: 0x1418 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 01:45:39, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 01:45:54
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF64145EB37 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF6415AE8D0 (64-bit), Flags: Cmdre0, Thread: 0x28A0 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 01:49:04, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 01:49:24
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: signal (4, 0x00): SIGILL: Попытка выполнить недопустимую операцию. Проверьте указатели на функции. 
+
+Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF64145EB37 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF6415AE8D0 (64-bit), Flags: Cmdre0, Thread: 0x28A0 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 01:49:04, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 01:49:25
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF6AB3EEBB1 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF6AB53E8D0 (64-bit), Flags: Cmdre0, Thread: 0x1E90 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 01:50:10, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 01:50:17
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: signal (4, 0x00): SIGILL: Попытка выполнить недопустимую операцию. Проверьте указатели на функции. 
+
+Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF6AB3EEBB1 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF6AB53E8D0 (64-bit), Flags: Cmdre0, Thread: 0x1E90 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 01:50:10, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 01:50:17
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF7DF71EB73 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF7DF86E8D0 (64-bit), Flags: Cmdre0, Thread: 0x1774 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 01:53:24, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 01:53:33
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: signal (4, 0x00): SIGILL: Попытка выполнить недопустимую операцию. Проверьте указатели на функции. 
+
+Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF7DF71EB73 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF7DF86E8D0 (64-bit), Flags: Cmdre0, Thread: 0x1774 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 01:53:24, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 01:53:33
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF7C048EB73 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF7C05DE8D0 (64-bit), Flags: Cmdre0, Thread: 0xDDC (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 01:54:48, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 01:55:10
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: signal (4, 0x00): SIGILL: Попытка выполнить недопустимую операцию. Проверьте указатели на функции. 
+
+Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF7C048EB73 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF7C05DE8D0 (64-bit), Flags: Cmdre0, Thread: 0xDDC (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 01:54:48, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 01:55:10
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF62ACFEB50 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF62AE4E8D0 (64-bit), Flags: Cmdre0, Thread: 0x1A5C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 02:02:31, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 02:02:38
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: signal (4, 0x00): SIGILL: Попытка выполнить недопустимую операцию. Проверьте указатели на функции. 
+
+Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF62ACFEB50 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF62AE4E8D0 (64-bit), Flags: Cmdre0, Thread: 0x1A5C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 02:02:31, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 02:02:38
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF775F2EB50 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF77607E8D0 (64-bit), Flags: Cmdre0, Thread: 0xFFC (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 02:08:20, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 02:08:34
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: signal (4, 0x00): SIGILL: Попытка выполнить недопустимую операцию. Проверьте указатели на функции. 
+
+Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF775F2EB50 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF77607E8D0 (64-bit), Flags: Cmdre0, Thread: 0xFFC (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 02:08:20, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 02:08:34
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF776C0EB50 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF776D5E8D0 (64-bit), Flags: Cmdre0, Thread: 0x16CC (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 18:23:43, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 18:23:57
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: signal (4, 0x00): SIGILL: Попытка выполнить недопустимую операцию. Проверьте указатели на функции. 
+
+Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF776C0EB50 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF776D5E8D0 (64-bit), Flags: Cmdre0, Thread: 0x16CC (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 18:23:43, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 18:23:57
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF6E87DEB86 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF6E892E8D0 (64-bit), Flags: Cmdre0, Thread: 0x251C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 18:25:22, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 18:25:31
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: signal (4, 0x00): SIGILL: Попытка выполнить недопустимую операцию. Проверьте указатели на функции. 
+
+Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF6E87DEB86 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF6E892E8D0 (64-bit), Flags: Cmdre0, Thread: 0x251C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 18:25:22, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 18:25:31
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF6E87DEB86 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF6E892E8D0 (64-bit), Flags: Cmdre0, Thread: 0x1344 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 18:25:22, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 18:26:37
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: signal (4, 0x00): SIGILL: Попытка выполнить недопустимую операцию. Проверьте указатели на функции. 
+
+Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF6E87DEB86 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF6E892E8D0 (64-bit), Flags: Cmdre0, Thread: 0x1344 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 18:25:22, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 18:26:37
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF7701FEB95 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF77034E8D0 (64-bit), Flags: Cmdre0, Thread: 0x3674 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 18:29:00, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 18:29:05
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: signal (4, 0x00): SIGILL: Попытка выполнить недопустимую операцию. Проверьте указатели на функции. 
+
+Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF7701FEB95 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF77034E8D0 (64-bit), Flags: Cmdre0, Thread: 0x3674 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 18:29:00, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 18:29:06
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF7DC19EBA4 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF7DC2EE8D0 (64-bit), Flags: Cmdre0, Thread: 0x1B50 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 18:32:30, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 18:32:39
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: signal (4, 0x00): SIGILL: Попытка выполнить недопустимую операцию. Проверьте указатели на функции. 
+
+Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF7DC19EBA4 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF7DC2EE8D0 (64-bit), Flags: Cmdre0, Thread: 0x1B50 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 18:32:30, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 18:32:39
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF6C14EEBA4 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF6C163E8D0 (64-bit), Flags: Cmdre0, Thread: 0x18B0 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 18:34:13, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 18:34:18
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: signal (4, 0x00): SIGILL: Попытка выполнить недопустимую операцию. Проверьте указатели на функции. 
+
+Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF6C14EEBA4 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF6C163E8D0 (64-bit), Flags: Cmdre0, Thread: 0x18B0 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 18:34:13, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 18:34:19
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF797E2EBB3 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF797F7E8D0 (64-bit), Flags: Cmdre0, Thread: 0x13D4 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 18:35:21, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 18:35:29
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: signal (4, 0x00): SIGILL: Попытка выполнить недопустимую операцию. Проверьте указатели на функции. 
+
+Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF797E2EBB3 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF797F7E8D0 (64-bit), Flags: Cmdre0, Thread: 0x13D4 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 18:35:21, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 18:35:29
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF60DC8EBB3 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF60DDDE8D0 (64-bit), Flags: Cmdre0, Thread: 0x3334 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 18:37:36, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 18:37:49
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: signal (4, 0x00): SIGILL: Попытка выполнить недопустимую операцию. Проверьте указатели на функции. 
+
+Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF60DC8EBB3 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF60DDDE8D0 (64-bit), Flags: Cmdre0, Thread: 0x3334 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 18:37:36, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 18:37:49
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF68786EBB3 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF6879BE8D0 (64-bit), Flags: Cmdre0, Thread: 0x171C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 18:39:17, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 18:39:26
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: signal (4, 0x00): SIGILL: Попытка выполнить недопустимую операцию. Проверьте указатели на функции. 
+
+Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF68786EBB3 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF6879BE8D0 (64-bit), Flags: Cmdre0, Thread: 0x171C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 18:39:17, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 18:39:26
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF7AF4FEBC2 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF7AF64E8D0 (64-bit), Flags: Cmdre0, Thread: 0x894 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 18:40:25, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 18:40:37
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: signal (4, 0x00): SIGILL: Попытка выполнить недопустимую операцию. Проверьте указатели на функции. 
+
+Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF7AF4FEBC2 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF7AF64E8D0 (64-bit), Flags: Cmdre0, Thread: 0x894 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 18:40:25, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 18:40:37
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF71161EB34 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF71176E8D0 (64-bit), Flags: Cmdre0, Thread: 0x1738 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 23:21:28, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 23:21:33
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: signal (4, 0x00): SIGILL: Попытка выполнить недопустимую операцию. Проверьте указатели на функции. 
+
+Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF71161EB34 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF71176E8D0 (64-bit), Flags: Cmdre0, Thread: 0x1738 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 23:21:28, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 23:21:33
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: #1: Куча была повреждена. (0xC0000374) при выполнении кода по адресу 0x00007FFC865AF3B9 в модуле C:\Windows\SYSTEM32\ntdll.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+Ой, всё (EXCEPTION_NONCONTINUABLE).
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF69192E8D0 (64-bit), Flags: Cmdre0, Thread: 0x3B88 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 23:23:05, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 23:23:16
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: #1: Куча была повреждена. (0xC0000374) при выполнении кода по адресу 0x00007FFC865AF3B9 в модуле C:\Windows\SYSTEM32\ntdll.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+Ой, всё (EXCEPTION_NONCONTINUABLE).
+
+С помощью функции _set_se_translator() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF69192E8D0 (64-bit), Flags: Cmdre0, Thread: 0x3B88 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 23:23:05, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 23:23:16
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF60C7DEB34 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF60C92E8D0 (64-bit), Flags: Cmdre0, Thread: 0x1DE0 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 23:30:00, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 23:30:06
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: signal (4, 0x00): SIGILL: Попытка выполнить недопустимую операцию. Проверьте указатели на функции. 
+
+Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF60C7DEB34 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF60C92E8D0 (64-bit), Flags: Cmdre0, Thread: 0x1DE0 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 23:30:00, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 23:30:06
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF70C85EB34 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF70C9AE8D0 (64-bit), Flags: Cmdre0, Thread: 0x174C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 23:31:33, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 23:31:38
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: signal (4, 0x00): SIGILL: Попытка выполнить недопустимую операцию. Проверьте указатели на функции. 
+
+Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF70C85EB34 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF70C9AE8D0 (64-bit), Flags: Cmdre0, Thread: 0x174C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 23:31:33, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 23:31:38
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF7F49FEB34 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF7F4B4E8D0 (64-bit), Flags: Cmdre0, Thread: 0x3844 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 23:31:57, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 23:32:10
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: signal (4, 0x00): SIGILL: Попытка выполнить недопустимую операцию. Проверьте указатели на функции. 
+
+Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF7F49FEB34 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF7F4B4E8D0 (64-bit), Flags: Cmdre0, Thread: 0x3844 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 23:31:57, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 23:32:10
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF7CEA9EB34 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF7CEBEE8D0 (64-bit), Flags: Cmdre0, Thread: 0xF8C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 23:33:09, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 23:33:14
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: signal (4, 0x00): SIGILL: Попытка выполнить недопустимую операцию. Проверьте указатели на функции. 
+
+Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF7CEA9EB34 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF7CEBEE8D0 (64-bit), Flags: Cmdre0, Thread: 0xF8C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 23:33:09, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 23:33:14
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF706F4EB34 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF70709E8D0 (64-bit), Flags: Cmdre0, Thread: 0x27B4 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 23:33:45, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 23:34:09
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: signal (4, 0x00): SIGILL: Попытка выполнить недопустимую операцию. Проверьте указатели на функции. 
+
+Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF706F4EB34 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF70709E8D0 (64-bit), Flags: Cmdre0, Thread: 0x27B4 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 23:33:45, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 23:34:10
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF61189EB34 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF6119EE8D0 (64-bit), Flags: Cmdre0, Thread: 0x2890 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 23:45:03, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 23:45:10
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: signal (4, 0x00): SIGILL: Попытка выполнить недопустимую операцию. Проверьте указатели на функции. 
+
+Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF61189EB34 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF6119EE8D0 (64-bit), Flags: Cmdre0, Thread: 0x2890 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 23:45:03, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 23:45:10
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF72555EB34 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF7256AE8D0 (64-bit), Flags: Cmdre0, Thread: 0x2DEC (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 23:49:31, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 23:49:46
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: X:\a.exe,
+
+ВНЕЗАПНО: signal (4, 0x00): SIGILL: Попытка выполнить недопустимую операцию. Проверьте указатели на функции. 
+
+Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF72555EB34 в модуле X:\a.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF7256AE8D0 (64-bit), Flags: Cmdre0, Thread: 0x2DEC (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Sep 30 2024 23:49:31, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Sep 30 2024 23:49:46
+
+Run file:	X:\a.exe
+Directory:	X:\
+
+--------------------------------------------------
