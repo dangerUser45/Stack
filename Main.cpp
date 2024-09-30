@@ -4,43 +4,50 @@
 #include <stdlib.h>
 #include <assert.h>
 
-int Ctor (stack_t* Data, int quantity);
-/*int Push (stack_t* Data, stack_el_t elem);
+int Ctor (stack_t* Data, size_t capacity ONDEBUG(, char* name, int line));
+int Push (stack_t* Data, stack_el_t elem);
 int Debug (stack_t* Data);
-int Pop (stack_t* Data);*/
+int Pop (stack_t* Data);
 int Dtor (stack_t* Data);
 
 int main ()
 {
     stack_t Data = {};
-    //printf("Before Ctor\n");
-    Ctor (&Data, 10);
 
+    CTOR (&Data, 10);
 
-    //Push (&Data, 100);
-    //printf("After Push1\n");
-    //Debug (&Data);
-    //Data.size_ += 1;
+    Push (&Data, 100);
+    printf("After Push1\n");
+    Debug (&Data);
+    Data.size_ += 1;
 
-    //Push (&Data, 200);
-    //printf("After Push2\n");
-    //Debug (&Data);
-    //Data.size_ += 1;
+    Push (&Data, 200);
+    printf("After Push2\n");
+    Debug (&Data);
+    Data.size_ += 1;
     Dtor (&Data);
-    printf (Р”РµРґ РЎСѓРїРµСЂ);
+
     return 0;
 }
 
-int Ctor (stack_t* Data, int quantity)
+int Ctor (stack_t* Data, size_t capacity ONDEBUG(, char* name, char*file int line))
 {
-    Data->buffer = (stack_el_t*) calloc (quantity + 2, sizeof (stack_el_t));
-    printf("quantity +2 = %d\n", quantity + 2);
+    Data->capacity = capacity;
+    Data->buffer = (stack_el_t*) calloc (capacity + 2, sizeof (stack_el_t));
+    ONDEBUG (Data -> buffer[0] = 0xDEADFA11;)
+    ONDEBUG (Data -> buffer[capacity+1] = 0xDEADFA11;)
+    ONDEBUG (Data -> name = name;)
+    ONDEBUG (Data -> line = line;)
+
+
+
+    return 0;
 
 
     //Debug (Data);
 
 }
-/*
+
 //==================================================================================================
 int Push (stack_t* Data, stack_el_t elem)
 {
@@ -66,11 +73,11 @@ int Pop (stack_t* Data)
     Data->size_ -= 1;
     return 0;
 }
-*/
+
 int Dtor (stack_t* Data)
 {
-    //free (Data->buffer);
-    printf("Р—Р°С„СЂРёС‡РёР»РѕСЃСЊ\n");
+    free (Data->buffer);
+    printf("зафричилось\n");
 
     return 0;
 }

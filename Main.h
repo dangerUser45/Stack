@@ -2,9 +2,12 @@
 
 #ifdef  DEBUG
     #define ONDEBUG( ... ) __VA_ARGS__
+    #define CTOR(Data, capacity) Ctor (Data, capacity, #Data, __FILE__, __LINE__ )
 #else
     #define ONDEBUG( ... )
+    #define CTOR(Data, capacity) Ctor (Data, capacity);
 #endif
+
 
 enum code_error
     {
@@ -19,8 +22,8 @@ typedef int stack_el_t;
 
 struct stack_t
 {
-    ONDEBUG (char* name;)
-    ONDEBUG (char* name2;)
+    ONDEBUG(char* name;)
+    ONDEBUG(int line;)
 
     stack_el_t* buffer;
     size_t size_;
