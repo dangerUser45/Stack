@@ -1,10 +1,8 @@
-#include "TXLib.h"
-#include "Main.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <assert.h>
 
-int Ctor (stack_t* Data, size_t capacity ONDEBUG(, char* name, int line));
+#include "Main.h"
+#include "Debug.h"
+
+int Ctor (stack_t* Data, size_t capacity ONDEBUG(,const char* name, const char* file, int line));
 int Push (stack_t* Data, stack_el_t elem);
 int Debug (stack_t* Data);
 int Pop (stack_t* Data);
@@ -12,12 +10,11 @@ int Dtor (stack_t* Data);
 
 int main ()
 {
+
     stack_t Data = {};
 
     CTOR (&Data, 10);
-
     Push (&Data, 100);
-    printf("After Push1\n");
     Debug (&Data);
     Data.size_ += 1;
 
@@ -30,19 +27,16 @@ int main ()
     return 0;
 }
 
-int Ctor (stack_t* Data, size_t capacity ONDEBUG(, char* name, char*file int line))
+int Ctor (stack_t* Data, size_t capacity ONDEBUG(, const char* name, const char* file, int line))
 {
     Data->capacity = capacity;
     Data->buffer = (stack_el_t*) calloc (capacity + 2, sizeof (stack_el_t));
-    ONDEBUG (Data -> buffer[0] = 0xDEADFA11;)
-    ONDEBUG (Data -> buffer[capacity+1] = 0xDEADFA11;)
     ONDEBUG (Data -> name = name;)
+    ONDEBUG (Data -> file = file;)
     ONDEBUG (Data -> line = line;)
-
-
+    ONDEBUG (Dump (Data);)
 
     return 0;
-
 
     //Debug (Data);
 

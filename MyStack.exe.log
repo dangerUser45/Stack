@@ -1,0 +1,70 @@
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: X:\MyStack.exe,
+
+ВНЕЗАПНО: Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF70C41D6FF в модуле X:\MyStack.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF70C5AFFF0 (64-bit), Flags: Cmdre0, Thread: 0x39B4 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Oct  2 2024 18:48:24, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Oct 02 2024 18:49:45
+
+Run file:	X:\MyStack.exe
+Directory:	X:\
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: X:\MyStack.exe,
+
+ВНЕЗАПНО: signal (4, 0x00): SIGILL: Попытка выполнить недопустимую операцию. Проверьте указатели на функции. 
+
+Недопустимая операция.
+
+#1: Исключение EXCEPTION_ILLEGAL_INSTRUCTION (0xC000001D) при выполнении кода по адресу 0x00007FF70C41D6FF в модуле X:\MyStack.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF70C5AFFF0 (64-bit), Flags: Cmdre0, Thread: 0x39B4 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Oct  2 2024 18:48:24, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Oct 02 2024 18:49:45
+
+Run file:	X:\MyStack.exe
+Directory:	X:\
+
+--------------------------------------------------
