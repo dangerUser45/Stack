@@ -1,5 +1,5 @@
 
-#include "TXLib.h"
+//#include "TXLib.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>
@@ -14,6 +14,7 @@
     #define CTOR(Data, capacity) Ctor (Data, capacity);
 #endif
 
+
 enum code_error
     {
         err = 0,
@@ -24,6 +25,9 @@ enum code_error
 
     };
 typedef int stack_el_t;
+typedef long long unsigned int uint_t;
+const stack_el_t POISON = -666;
+const stack_el_t CANARY = -123401234;
 
 struct stack_t
 {

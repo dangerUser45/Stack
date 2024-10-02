@@ -4,24 +4,33 @@
 
 int Ctor (stack_t* Data, size_t capacity ONDEBUG(,const char* name, const char* file, int line));
 int Push (stack_t* Data, stack_el_t elem);
-int Debug (stack_t* Data);
 int Pop (stack_t* Data);
 int Dtor (stack_t* Data);
+int Stack_Recalloc (stack_t Data);
 
 int main ()
 {
-
     stack_t Data = {};
 
     CTOR (&Data, 10);
+    ONDEBUG (Dump (&Data);)
+    printf ("Data.buffer + Data.size + 2 = %llu; Data.buffer + Data.capacity = %llu",Data.buffer + Data.size + 2, Data.buffer + Data.capacity);
+    ONDEBUG (Fill_Poison (Data.buffer + Data.size + 2, Data.buffer + Data.capacity);)
+    ONDEBUG (Dump (&Data);)
+
+    ONDEBUG (Canary (&Data);)
+    ONDEBUG (Dump (&Data);)
+
     Push (&Data, 100);
-    Debug (&Data);
-    Data.size_ += 1;
+    ONDEBUG (Dump (&Data);)
 
     Push (&Data, 200);
-    printf("After Push2\n");
-    Debug (&Data);
-    Data.size_ += 1;
+    ONDEBUG (Dump (&Data);)
+
+    stack_el_t elpop = Pop (&Data);
+    printf ("elpop = %d\n", elpop);
+    ONDEBUG (Dump (&Data);)
+
     Dtor (&Data);
 
     return 0;
@@ -29,45 +38,36 @@ int main ()
 
 int Ctor (stack_t* Data, size_t capacity ONDEBUG(, const char* name, const char* file, int line))
 {
-    Data->capacity = capacity;
-    Data->buffer = (stack_el_t*) calloc (capacity + 2, sizeof (stack_el_t));
+    Data -> capacity = capacity;
+    Data -> size = 0;
+    Data -> buffer = (stack_el_t*) calloc (capacity ONDEBUG(+ 2), sizeof (stack_el_t));
+    Data -> buffer[0] = CANARY;
     ONDEBUG (Data -> name = name;)
     ONDEBUG (Data -> file = file;)
     ONDEBUG (Data -> line = line;)
-    ONDEBUG (Dump (Data);)
 
     return 0;
-
-    //Debug (Data);
-
 }
 
 //==================================================================================================
 int Push (stack_t* Data, stack_el_t elem)
 {
-    size_t size_ = Data->size_;
-    *(Data->buffer + size_) = elem;
-    Debug (Data);
+    size_t size = Data->size;
+    Data -> buffer [size ONDEBUG( + 1)] = elem;
+    Data -> size += 1;
 
     return elem;
 }
 //==================================================================================================
-int Debug (stack_t* Data)
+int Pop (stack_t* Data)
 {
-    printf("Address Buffer = %p\n", Data->buffer);
-    printf("Elem = %d\n", *(Data->buffer + Data->size_));
-    printf("Size_ = %llu\n", Data->size_);
+    size_t size = Data->size;
+
+    Data -> buffer [size ONDEBUG( + 1 )] = POISON;
+    Data -> size -= 1;
     return 0;
 }
 //==================================================================================================
-int Pop (stack_t* Data)
-{
-    size_t size_ = Data->size_;
-    *(Data->buffer + size_) = 0;
-    Data->size_ -= 1;
-    return 0;
-}
-
 int Dtor (stack_t* Data)
 {
     free (Data->buffer);
@@ -75,4 +75,8 @@ int Dtor (stack_t* Data)
 
     return 0;
 }
-
+//==================================================================================================
+int Stack_Recalloc (stack_t Data)
+{
+    return 0;
+}
