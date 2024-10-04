@@ -6,14 +6,15 @@
 
 int main ()
 {
-    stack_t Data = {};
-    ONDEBUG (Create_file (&Data);)
+$$  stack_t Data = {};
+$$  ONDEBUG (Create_file (&Data);)
 
-    CTOR (&Data, 10);
-    ONDEBUG (Dump (&Data);)
-    fprintf (Data.fp, "Data.buffer + Data.size + 1 = %n\n", Data.buffer + Data.size + 1);
-    ONDEBUG (Fill_Poison (Data.buffer + Data.size + 1, Data.capacity);)
-    ONDEBUG (Dump (&Data);)
+$$  CTOR (&Data, 10);
+$$  fprintf (Data.fp, "data.bufer = %p", Data.buffer);
+$$  ONDEBUG (Dump (&Data);)
+$$  fprintf (Data.fp, "Data.buffer + Data.size + 1 = %p\n", Data.buffer + Data.size + 1);
+$$  ONDEBUG (Fill_Poison (Data.buffer + Data.size + 1, Data.capacity);)
+$$  ONDEBUG (Dump (&Data);)
 
     ONDEBUG (Canary (&Data);)
     ONDEBUG (Dump (&Data);)
@@ -43,13 +44,16 @@ int main ()
 
 int Ctor (stack_t* Data, size_t capacity ONDEBUG(, const char* name, const char* file, int line))
 {
-    Data -> capacity = capacity;
-    Data -> size = 0;
-    stack_el_t* buffer = (stack_el_t*) calloc (capacity ONDEBUG(+ 2), sizeof (stack_el_t));
-    if (buffer)
-        return 0;/* code_error*/;
+    $$ Data -> capacity = capacity;
+    $$ Data -> size = 0;
+    $$ stack_el_t* buffer = (stack_el_t*) calloc (capacity ONDEBUG(+ 2), sizeof (stack_el_t));
+    $$ fprintf (Data -> fp, "buffer = %p\n", buffer);
+    $$ if (buffer == NULL)
+       { $$ return 0;/* code_error*/;}
+    $$ Data -> buffer = buffer;
+    $$  fprintf (Data -> fp, "Data->bufer = %p", Data -> buffer);
 
-    Data -> buffer = buffer;
+
     ONDEBUG (Data -> name = name;)
     ONDEBUG (Data -> file = file;)
     ONDEBUG (Data -> line = line;)
@@ -74,7 +78,7 @@ int Pop (stack_t* Data)
 {
     size_t size = Data->size;
     fprintf (Data -> fp, "size = %zu", size);
-    fprintf(Data -> fp, "addr_popa = %n\n",  Data -> buffer +size ONDEBUG( + 1 ));
+    fprintf(Data -> fp, "addr_popa = %p\n",  Data -> buffer +size ONDEBUG( + 1 ));
 
     Data -> buffer [size] = POISON;
     Data -> size -= 1;

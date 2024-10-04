@@ -3,7 +3,7 @@
 
 int Create_file (stack_t* Data)
 {
-    FILE* fp = NULL;
+    FILE* fp = 0;
     if ((fp = fopen("StackLog.txt", "w+")) == NULL)
     {
         fprintf (stdout, "Не удается открыть файл\n") ;
