@@ -1,40 +1,65 @@
-#include "Main.h"
+#include "Common.h"
 #include "Debug.h"
 
+int Create_file (stack_t* Data)
+{
+    FILE* fp = NULL;
+    if ((fp = fopen("StackLog.txt", "w+")) == NULL)
+    {
+        fprintf (stdout, "Не удается открыть файл\n") ;
+        return 0;
+    }
+    setvbuf (fp, 0, 0, _IONBF);
+    Data -> fp = fp;
 
+    return 0;/* code_error */
+}
+//==================================================================================================
 int Dump (stack_t* Data)
 {
-    printf ("//================================================================================================\n");
+    FILE* fp = Data -> fp;
+    assert (fp);
+    fprintf (fp, "//================================================================================================\n");
 
-    printf ("\tSTRUCT:\n\t");
-    printf ("name of struct = %s\n", Data -> name);
-    printf ("file = %s\n", Data -> file);
-    printf ("line = %d\n", Data -> line);
-    printf ("buffer = %llu\n", Data -> buffer);
-    printf ("size = %lld\n", Data -> size);
-    printf ("capacity = %lld\n", Data -> capacity);
+    fprintf (fp, "\tSTRUCT:\n");
+    fprintf (fp, "name of struct = %s\n", Data -> name);
+    fprintf (fp, "file = %s\n", Data -> file);
+    fprintf (fp, "line = %d\n", Data -> line);
+    fprintf (fp, "buffer = %p\n", Data -> buffer);
+    fprintf (fp, "size = %zu\n", Data -> size);
+    fprintf (fp, "capacity = %zu\n", Data -> capacity);
 
-    printf ("\tSTACK:\n\t");
-    for (size_t i = 0; i < Data -> capacity + 1; ++i)
-        printf ("<%d> ", Data -> buffer[i]);
-    printf ("\n");
-    printf ("//================================================================================================\n");
+    fprintf (fp, "\tSTACK:\n");
+    for (size_t i = 0; i < Data -> capacity + 2; ++i)
+        fprintf (fp, "\t<%d> --- address: %p\n", Data -> buffer[i], Data -> buffer + i);
+    fprintf (fp, "\n");
+    fprintf (fp,"//================================================================================================\n");
     return 0;
 }
 //==================================================================================================
 int Canary (stack_t* Data)
 {
+    Data -> buffer[0] = CANARY;
     Data -> buffer[Data -> capacity + 1] = CANARY;
 
     return 0;
 }
 //==================================================================================================
-int Fill_Poison (stack_el_t* begin, stack_el_t* end)
+int Fill_Poison (stack_el_t* begin, uint_t quantity)
 {
-    uint_t limit = ((uint_t) end - (uint_t) begin) / (uint_t)sizeof (stack_el_t);
-    printf ("limit = %llu\n", limit);
-    for (uint_t i = 0; i < limit; ++i)
+    for (uint_t i = 0; i < quantity; ++i)
         begin[i] = POISON;
 
     return 0;
 }
+//==================================================================================================
+int Verificator (stack_t* Data)
+{
+    if (Data->buffer == 0)
+    ;
+
+
+
+    return 0;
+}
+
