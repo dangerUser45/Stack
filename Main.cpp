@@ -6,15 +6,15 @@
 
 int main ()
 {
-$$  stack_t Data = {};
-$$  ONDEBUG (Create_file (&Data);)
+    stack_t Data = {};
+    ONDEBUG (Create_file (&Data);)
 
-$$  CTOR (&Data, 10);
-$$  fprintf (Data.fp, "data.bufer = %p", Data.buffer);
-$$  ONDEBUG (Dump (&Data);)
-$$  fprintf (Data.fp, "Data.buffer + Data.size + 1 = %p\n", Data.buffer + Data.size + 1);
-$$  ONDEBUG (Fill_Poison (Data.buffer + Data.size + 1, Data.capacity);)
-$$  ONDEBUG (Dump (&Data);)
+    CTOR (&Data, 0);
+    fprintf (Data.fp, "data.bufer = %p\n", Data.buffer);
+    ONDEBUG (Dump (&Data);)
+    fprintf (Data.fp, "Data.buffer + Data.size + 1 = %p\n", Data.buffer + Data.size + 1);
+
+    ONDEBUG (Dump (&Data);)
 
     ONDEBUG (Canary (&Data);)
     ONDEBUG (Dump (&Data);)
@@ -44,19 +44,18 @@ $$  ONDEBUG (Dump (&Data);)
 
 int Ctor (stack_t* Data, size_t capacity ONDEBUG(, const char* name, const char* file, int line))
 {
-    $$ Data -> capacity = capacity;
-    $$ Data -> size = 0;
-    $$ stack_el_t* buffer = (stack_el_t*) calloc (capacity ONDEBUG(+ 2), sizeof (stack_el_t));
-    $$ fprintf (Data -> fp, "buffer = %p\n", buffer);
-    $$ if (buffer == NULL)
-       { $$ return 0;/* code_error*/;}
-    $$ Data -> buffer = buffer;
-    $$  fprintf (Data -> fp, "Data->bufer = %p", Data -> buffer);
-
+    Data -> capacity = capacity;
+    Data -> size = 0;
+    stack_el_t* buffer = (stack_el_t*) calloc (capacity ONDEBUG(+ 2), sizeof (stack_el_t));
+    if (buffer == NULL)
+       { return 0;/* code_error*/;}
+    Data -> buffer = buffer;
 
     ONDEBUG (Data -> name = name;)
     ONDEBUG (Data -> file = file;)
     ONDEBUG (Data -> line = line;)
+
+    ONDEBUG (Fill_Poison (Data -> buffer + Data -> size + 1, Data -> capacity);)
 
     return 0;
 }
@@ -65,7 +64,11 @@ int Ctor (stack_t* Data, size_t capacity ONDEBUG(, const char* name, const char*
 int Push (stack_t* Data, stack_el_t elem)
 {
     if (Data -> size >= Data -> capacity - 1)
-        Stack_Realloc (Data);
+    {
+        Data -> size
+        Stack_Realloc_Up (Data);
+        ONDEBUG (Fill_Poison (Data -> buffer + Data -> size + 1, Data -> capacity);)
+    }
 
     size_t size = Data->size;
     Data -> buffer [size ONDEBUG( + 1)] = elem;
@@ -76,8 +79,15 @@ int Push (stack_t* Data, stack_el_t elem)
 //==================================================================================================
 int Pop (stack_t* Data)
 {
-    size_t size = Data->size;
-    fprintf (Data -> fp, "size = %zu", size);
+    if (Data -> size < Data -> capacity / 4)
+    {
+        Data
+        Stack_Realloc_Down (Data);
+        ONDEBUG (Fill_Poison (Data -> buffer + Data -> size + 1, Data -> capacity);)
+    }
+
+    size_t size = Data -> size;
+    fprintf (Data -> fp, "size = %zu\n", size);
     fprintf(Data -> fp, "addr_popa = %p\n",  Data -> buffer +size ONDEBUG( + 1 ));
 
     Data -> buffer [size] = POISON;
@@ -93,9 +103,20 @@ int Dtor (stack_t* Data)
     return 0;
 }
 //==================================================================================================
-int Stack_Realloc (stack_t* Data)
+
+#define PLEASE_NOTE_THAT_DNLX_DID_THAT(...) __VA_ARGS__
+
+int Stack_Realloc_Up (stack_t* Data)
 {
-    Data -> buffer = (stack_el_t*) realloc (Data -> buffer, MAGIC_NUM * Data -> capacity);
+    Data -> buffer = (stack_el_t*) realloc (Data -> buffer,
+                                            PLEASE_NOTE_THAT_DNLX_DID_THAT (Data -> capacity *= MAGIC_NUM)); //capacity is
+
+    return 0;
+}
+//==================================================================================================
+int Stack_Realloc_Down (stack_t* Data)
+{
+    Data -> buffer = (stack_el_t*) realloc (Data -> buffer, Data -> capacity /= MAGIC_NUM);
     return 0;
 }
 //==================================================================================================
