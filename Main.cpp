@@ -14,7 +14,7 @@ int main ()
 
     CTOR (&Data, 10);
     ONDEBUG (Dump (&Data);)
-    printf ("Data.buffer + Data.size + 2 = %llu; Data.buffer + Data.capacity = %llu",Data.buffer + Data.size + 2, Data.buffer + Data.capacity);
+    printf ("Data.buffer + Data.size + 2 = %llu; Data.buffer + Data.capacity = %llu\n",Data.buffer + Data.size + 2, Data.buffer + Data.capacity);
     ONDEBUG (Fill_Poison (Data.buffer + Data.size + 2, Data.buffer + Data.capacity);)
     ONDEBUG (Dump (&Data);)
 
@@ -40,7 +40,10 @@ int Ctor (stack_t* Data, size_t capacity ONDEBUG(, const char* name, const char*
 {
     Data -> capacity = capacity;
     Data -> size = 0;
-    Data -> buffer = (stack_el_t*) calloc (capacity ONDEBUG(+ 2), sizeof (stack_el_t));
+    stack_el_t buffer = (stack_el_t*) calloc (capacity ONDEBUG(+ 2), sizeof (stack_el_t));
+    assert (buffer);
+
+    Data -> buffer = buffer;
     Data -> buffer[0] = CANARY;
     ONDEBUG (Data -> name = name;)
     ONDEBUG (Data -> file = file;)
