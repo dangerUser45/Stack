@@ -58,10 +58,10 @@ int Verificator (stack_t* Data)
     int error = 0;
 
     if (Data->buffer == 0)               // 1111'1111
-        error = error | 0b00000000000000000000000000000001;     // 1 csb
+        error = error | BUFFER_NULL;     // 1 csb
 
     if (Data->size < 0)
-        error = error | 0b00000000000000000000000000000010;     // 2
+        error = error | SIZE_NULL;     // 2
 
     if (Data ->capacity < 0)
         error = error | 0b00000000000000000000000000000100;     // 3
@@ -108,9 +108,12 @@ int Verificator (stack_t* Data)
     return error;
 }
 //==================================================================================================
-int Decoder_error ()
+int Decoder_error (stack_t* Data, int error)
 {
+    if (error & 0b00000000000000000000000000000001)
+        fprintf (Data -> fp, "Buffer = 0\n");
 
+    if ()
 }
 //==================================================================================================
 int Hash (stack_t Data)

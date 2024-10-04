@@ -17,7 +17,6 @@
 
 enum code_error
     {
-        err = 0,
         BUFFER_NULL    = (1<<0),
         SIZE_NULL      = (1<<1),
                        = (1<<2),
