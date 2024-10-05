@@ -14,28 +14,18 @@ int main ()
     ONDEBUG (Dump (&Data);)
     fprintf (Data.fp, "Data.buffer + Data.size + 1 = %p\n", Data.buffer + Data.size + 1);
 
-    ONDEBUG (Dump (&Data);)
-
     ONDEBUG (Canary (&Data);)
     ONDEBUG (Dump (&Data);)
+
+    Data.canary1_struct = 13;
+    Data.buffer[0] = 18;
 
     Push (&Data, 100);
     ONDEBUG (Dump (&Data);)
 
-    Push (&Data, 200);
-    ONDEBUG (Dump (&Data);)
-
-    Push (&Data, 400);
-    ONDEBUG (Dump (&Data);)
-
     Pop (&Data);
     ONDEBUG (Dump (&Data);)
 
-    Pop (&Data);
-    ONDEBUG (Dump (&Data);)
-
-    Pop (&Data);
-    ONDEBUG (Dump (&Data);)
 
     Dtor (&Data);
 
@@ -49,13 +39,15 @@ int Ctor (stack_t* Data, ssize_t capacity ONDEBUG(, const char* name, const char
     Data -> capacity = capacity;
     Data -> size = 0;
     stack_el_t* buffer = (stack_el_t*) calloc (capacity ONDEBUG(+ 2), sizeof (stack_el_t));
-    if (buffer == NULL)
-       { return 0;/* code_error*/;}
+    CHECK (return 0;)
+
     Data -> buffer = buffer;
 
+    ONDEBUG (Data -> canary1_struct = POISON;)
     ONDEBUG (Data -> name = name;)
     ONDEBUG (Data -> file = file;)
     ONDEBUG (Data -> line = line;)
+    ONDEBUG (Data -> canary2_struct = POISON;)
 
     ONDEBUG (Fill_Poison (Data -> buffer + Data -> size + 1, Data -> capacity);)
 
@@ -67,7 +59,6 @@ int Ctor (stack_t* Data, ssize_t capacity ONDEBUG(, const char* name, const char
 //==================================================================================================
 int Push (stack_t* Data, stack_el_t elem)
 {
-
     CHECK (return 0;)
 
     if (Data -> size >= Data -> capacity - 1)
@@ -90,6 +81,7 @@ int Pop (stack_t* Data)
 {
 
     CHECK (return 0;)
+    fprintf (Data -> fp, "HERE size = %zd\n", Data -> size);
 
     if (Data -> size < Data -> capacity / 4)
     {
@@ -100,14 +92,14 @@ int Pop (stack_t* Data)
 
     ssize_t size = Data -> size;
     fprintf (Data -> fp, "size = %zd\n", size);
-    fprintf(Data -> fp, "addr_popa = %p\n",  Data -> buffer +size ONDEBUG( + 1 ));
+    fprintf(Data -> fp, "addr_popa = %p\n",  Data -> buffer +size );
 
     Data -> buffer [size] = POISON;
     Data -> size -= 1;
-    return 0;
-
     CHECK (return 0;)
 
+
+    return 0;
 }
 //==================================================================================================
 int Dtor (stack_t* Data)
@@ -128,15 +120,21 @@ int Dtor (stack_t* Data)
 
 int Stack_Realloc_Up (stack_t* Data)
 {
+    CHECK (return 0;)
     Data -> buffer = (stack_el_t*) realloc (Data -> buffer,
                                             PLEASE_NOTE_THAT_DNLX_DID_THAT (Data -> capacity *= MAGIC_NUM)); //capacity is
 
+    CHECK (return 0;)
     return 0;
 }
+#undef PLEASE_NOTE_THAT_DNLX_DID_THAT
 //==================================================================================================
 int Stack_Realloc_Down (stack_t* Data)
 {
+    CHECK (return 0;)
     Data -> buffer = (stack_el_t*) realloc (Data -> buffer, Data -> capacity /= MAGIC_NUM);
+
+    CHECK (return 0;)
     return 0;
 }
 //==================================================================================================

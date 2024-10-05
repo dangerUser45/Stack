@@ -39,8 +39,8 @@ int Dump (stack_t* Data)
 //==================================================================================================
 int Canary (stack_t* Data)
 {
-    Data -> buffer[0] = CANARY;
-    Data -> buffer[Data -> capacity + 1] = CANARY;
+    Data -> buffer[0] = CANARY_B;
+    Data -> buffer[Data -> capacity + 1] = CANARY_B;
 
     return 0;
 }
@@ -69,21 +69,26 @@ int Verificator (stack_t* Data)
     if (Data -> fp == NULL)
         error = error | FILE_NULL;     // 4
 
-    if (Data -> canary1 == CANARY)
-        error = error | BAD_CANARY1;     // 5
+    if (Data -> canary1_struct != CANARY_S)
+        error = error | BAD_CANARY1_S;     // 5
 
-    if (Data -> canary2 == CANARY)
-        error = error | BAD_CANARY2;     // 6
+    if (Data -> canary2_struct != CANARY_S)
+        error = error | BAD_CANARY2_S;     // 6
 
+    if (Data -> buffer[0] != CANARY_B)
+        error = error | BAD_CANARY1_B;
+
+    if (Data -> buffer[Data -> capacity + 1] != CANARY_B)
+        error = error | BAD_CANARY2_B;
 
     return error;
 }
 //==================================================================================================
-int Decoder_error (stack_t* Data, int error)
+int Decoder_error (stack_t* Data, int error, int line)
 {
 
     fprintf (Data -> fp, "=======================================================================\n");
-    fprintf (Data -> fp, "\tERRORS\n");
+    fprintf (Data -> fp, "\tERRORS  in  line: %d\n", line);
 
 
     if (error & BUFFER_NULL)
@@ -98,16 +103,22 @@ int Decoder_error (stack_t* Data, int error)
     if (error & FILE_NULL)
         fprintf (Data -> fp, "File pointer = NULL\n");
 
-    if (error & BAD_CANARY1)
-        fprintf (Data -> fp, "Canary1 is bad\n");
+    if (error & BAD_CANARY1_S)
+        fprintf (Data -> fp, "Canary1_struct is bad\n");
 
-    if (error & BAD_CANARY2)
-        fprintf (Data -> fp, "Canary2 is bad\n");
+    if (error & BAD_CANARY2_S)
+        fprintf (Data -> fp, "Canary2_struct is bad\n");
+
+    if (error & BAD_CANARY1_B)
+        fprintf (Data -> fp, "Canary1_buf is bad\n");
+
+    if (error & BAD_CANARY2_B)
+        fprintf (Data -> fp, "Canary2_buf is bad\n");
 
     if (error == 0)
         fprintf (Data -> fp, "All it is OK\n");
 
-    fprintf (Data -> fp, "==================================================\n");
+    fprintf (Data -> fp, "=======================================================================\n");
 
     return error;
 }
