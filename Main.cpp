@@ -9,110 +9,101 @@ int main ()
     stack_t Data = {};
     ONDEBUG (Create_file (&Data);)
 
-    CTOR (&Data, 10);
-    fprintf (Data.fp, "data.bufer = %p\n", Data.buffer);
-    ONDEBUG (Dump (&Data);)
-    fprintf (Data.fp, "Data.buffer + Data.size + 1 = %p\n", Data.buffer + Data.size + 1);
 
-    ONDEBUG (Canary (&Data);)
+
+    Pop (&Data) OR DIE;
     ONDEBUG (Dump (&Data);)
 
-    Data.canary1_struct = 13;
-    Data.buffer[0] = 18;
-
-    Push (&Data, 100);
+    Dtor (&Data) OR DIE;
     ONDEBUG (Dump (&Data);)
 
-    Pop (&Data);
-    ONDEBUG (Dump (&Data);)
-
-
-    Dtor (&Data);
-
-    return 0;
+    return NO_ERROR_;
 }
 
 int Ctor (stack_t* Data, ssize_t capacity ONDEBUG(, const char* name, const char* file, int line))
 {
-    CHECK ()
 
     Data -> capacity = capacity;
     Data -> size = 0;
     stack_el_t* buffer = (stack_el_t*) calloc (capacity ONDEBUG(+ 2), sizeof (stack_el_t));
-    CHECK (return 0;)
 
+    if (buffer == NULL) return BUFFER_NULL;
     Data -> buffer = buffer;
 
-    ONDEBUG (Data -> canary1_struct = POISON;)
+    ONDEBUG (Data -> canary1_struct = CANARY_S;)
     ONDEBUG (Data -> name = name;)
     ONDEBUG (Data -> file = file;)
     ONDEBUG (Data -> line = line;)
-    ONDEBUG (Data -> canary2_struct = POISON;)
+    ONDEBUG (Data -> canary2_struct = CANARY_S;)
+    ONDEBUG (Canary (Data);)
 
     ONDEBUG (Fill_Poison (Data -> buffer + Data -> size + 1, Data -> capacity);)
 
-    CHECK ()
+    CHECK ( , "Ctor")
 
-    return 0;
+    return NO_ERROR_;
 }
 
 //==================================================================================================
 int Push (stack_t* Data, stack_el_t elem)
 {
-    CHECK (return 0;)
+    CHECK (return GENERAL_ERROR;, "Push")
 
     if (Data -> size >= Data -> capacity - 1)
     {
         fprintf (Data -> fp, "its realloc up\n");
         Stack_Realloc_Up (Data);
         ONDEBUG (Fill_Poison (Data -> buffer + Data -> size + 1, Data -> capacity);)
+        ONDEBUG (Canary (Data);)
     }
-
+    ONDEBUG (fprintf (Data -> fp, "\t\t\tsize = %zd\n", Data -> size);)
     ssize_t size = Data->size;
-    Data -> buffer [size ONDEBUG( + 1)] = elem;
+    Data -> buffer [size  ONDEBUG( + 1)] = elem;
     Data -> size += 1;
 
-    CHECK (return 0;)
+    CHECK (return GENERAL_ERROR;, "Push")
 
-    return elem;
+    return NO_ERROR_;
 }
 //==================================================================================================
 int Pop (stack_t* Data)
 {
 
-    CHECK (return 0;)
-    fprintf (Data -> fp, "HERE size = %zd\n", Data -> size);
+    //CHECK ( , "Pop")
+    ONDEBUG (fprintf (Data -> fp, "HERE size = %zd\n", Data -> size);)
 
-    if (Data -> size < Data -> capacity / 4)
+$$  if (Data -> size <= 0) return BAD_SIZE;
+$$  ONDEBUG (fprintf (Data -> fp, "RTRTRTR\n");) //!!!
+    if (Data -> size < Data -> capacity / (MAGIC_NUM * MAGIC_NUM) )
     {
-        fprintf (Data -> fp, "Its realloc_down\n");
+        ONDEBUG (fprintf (Data -> fp, "Its realloc_down\n");)
         Stack_Realloc_Down (Data);
         ONDEBUG (Fill_Poison (Data -> buffer + Data -> size + 1, Data -> capacity);)
+        ONDEBUG (Canary (Data);)
     }
 
     ssize_t size = Data -> size;
-    fprintf (Data -> fp, "size = %zd\n", size);
-    fprintf(Data -> fp, "addr_popa = %p\n",  Data -> buffer +size );
+    ONDEBUG (fprintf (Data -> fp, "size = %zd\n", size);)
+    ONDEBUG (fprintf(Data -> fp, "addr_popa = %p\n",  Data -> buffer +size );)
 
     Data -> buffer [size] = POISON;
     Data -> size -= 1;
-    CHECK (return 0;)
+    CHECK ( , "Pop")
 
-
-    return 0;
+    return NO_ERROR_;
 }
 //==================================================================================================
 int Dtor (stack_t* Data)
 {
 
-    CHECK (return 0;)
+    CHECK (return GENERAL_ERROR;, "Dtor")
 
     free (Data->buffer);
-    fprintf(Data ->fp, "зафричилось\n");
+    ONDEBUG (fprintf(Data ->fp, "зафричилось\n");)
 
-    CHECK (return 0;)
+    CHECK ( , "Dtor") // noreturn because use after free ()
 
-    return 0;
+    return NO_ERROR_;
 }
 //==================================================================================================
 
@@ -120,21 +111,24 @@ int Dtor (stack_t* Data)
 
 int Stack_Realloc_Up (stack_t* Data)
 {
-    CHECK (return 0;)
+    CHECK ( , "Stack_Realloc_Up") //
     Data -> buffer = (stack_el_t*) realloc (Data -> buffer,
-                                            PLEASE_NOTE_THAT_DNLX_DID_THAT (Data -> capacity *= MAGIC_NUM)); //capacity is
+                                            PLEASE_NOTE_THAT_DNLX_DID_THAT ((Data -> capacity * MAGIC_NUM + 2) * sizeof (Data->capacity))); //capacity is
+    Data -> capacity = Data ->capacity * MAGIC_NUM;
 
-    CHECK (return 0;)
-    return 0;
+    CHECK ( , "Stack_Realloc_Up")
+    return NO_ERROR_;
 }
 #undef PLEASE_NOTE_THAT_DNLX_DID_THAT
+
 //==================================================================================================
 int Stack_Realloc_Down (stack_t* Data)
 {
-    CHECK (return 0;)
-    Data -> buffer = (stack_el_t*) realloc (Data -> buffer, Data -> capacity /= MAGIC_NUM);
+    CHECK ( , "Stack_Realloc_Down")
+    Data -> buffer = (stack_el_t*) realloc (Data -> buffer, (Data -> capacity * MAGIC_NUM + 2) * sizeof (Data->capacity));
+    Data -> capacity = Data -> capacity / (MAGIC_NUM * MAGIC_NUM);
+    CHECK ( , "Stack_Realloc_Down")
 
-    CHECK (return 0;)
-    return 0;
+    return NO_ERROR_;
 }
 //==================================================================================================
