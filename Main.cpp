@@ -9,7 +9,7 @@ int main ()
     stack_t Data = {};
     ONDEBUG (Create_file (&Data);)
 
-    CTOR (&Data, 0);
+    CTOR (&Data, 10);
     fprintf (Data.fp, "data.bufer = %p\n", Data.buffer);
     ONDEBUG (Dump (&Data);)
     fprintf (Data.fp, "Data.buffer + Data.size + 1 = %p\n", Data.buffer + Data.size + 1);
@@ -42,8 +42,10 @@ int main ()
     return 0;
 }
 
-int Ctor (stack_t* Data, size_t capacity ONDEBUG(, const char* name, const char* file, int line))
+int Ctor (stack_t* Data, ssize_t capacity ONDEBUG(, const char* name, const char* file, int line))
 {
+    CHECK ()
+
     Data -> capacity = capacity;
     Data -> size = 0;
     stack_el_t* buffer = (stack_el_t*) calloc (capacity ONDEBUG(+ 2), sizeof (stack_el_t));
@@ -57,48 +59,66 @@ int Ctor (stack_t* Data, size_t capacity ONDEBUG(, const char* name, const char*
 
     ONDEBUG (Fill_Poison (Data -> buffer + Data -> size + 1, Data -> capacity);)
 
+    CHECK ()
+
     return 0;
 }
 
 //==================================================================================================
 int Push (stack_t* Data, stack_el_t elem)
 {
+
+    CHECK (return 0;)
+
     if (Data -> size >= Data -> capacity - 1)
     {
-        Data -> size
+        fprintf (Data -> fp, "its realloc up\n");
         Stack_Realloc_Up (Data);
         ONDEBUG (Fill_Poison (Data -> buffer + Data -> size + 1, Data -> capacity);)
     }
 
-    size_t size = Data->size;
+    ssize_t size = Data->size;
     Data -> buffer [size ONDEBUG( + 1)] = elem;
     Data -> size += 1;
+
+    CHECK (return 0;)
 
     return elem;
 }
 //==================================================================================================
 int Pop (stack_t* Data)
 {
+
+    CHECK (return 0;)
+
     if (Data -> size < Data -> capacity / 4)
     {
-        Data
+        fprintf (Data -> fp, "Its realloc_down\n");
         Stack_Realloc_Down (Data);
         ONDEBUG (Fill_Poison (Data -> buffer + Data -> size + 1, Data -> capacity);)
     }
 
-    size_t size = Data -> size;
-    fprintf (Data -> fp, "size = %zu\n", size);
+    ssize_t size = Data -> size;
+    fprintf (Data -> fp, "size = %zd\n", size);
     fprintf(Data -> fp, "addr_popa = %p\n",  Data -> buffer +size ONDEBUG( + 1 ));
 
     Data -> buffer [size] = POISON;
     Data -> size -= 1;
     return 0;
+
+    CHECK (return 0;)
+
 }
 //==================================================================================================
 int Dtor (stack_t* Data)
 {
+
+    CHECK (return 0;)
+
     free (Data->buffer);
     fprintf(Data ->fp, "зафричилось\n");
+
+    CHECK (return 0;)
 
     return 0;
 }

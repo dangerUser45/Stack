@@ -9,6 +9,7 @@
 #ifdef  DEBUG
     #define ONDEBUG( ... ) __VA_ARGS__
     #define CTOR(Data, capacity) Ctor (Data, capacity, #Data, __FILE__, __LINE__)
+    #define CHECK( code ) { int error = Verificator (Data); Decoder_error (Data, error);  if (error != 0) code;}
 #else
     #define ONDEBUG( ... )
     #define CTOR(Data, capacity) Ctor (Data, capacity);
@@ -18,10 +19,13 @@
 enum code_error
     {
         BUFFER_NULL    = (1<<0),
-        SIZE_NULL      = (1<<1),
-                       = (1<<2),
-        ASD            = (1<<3),
-        RTYU           = (1<<4)
+        BAD_SIZE      = (1<<1),
+        BAD_CAPACITY  = (1<<2),
+        FILE_NULL      = (1<<3),
+        BAD_CANARY1   = (1<<4),
+        BAD_CANARY2  = (1<<5),
+
+
 
     };
 typedef int stack_el_t;
@@ -41,8 +45,8 @@ struct stack_t
 
 
     stack_el_t* buffer;
-    size_t size;
-    size_t capacity;
+    ssize_t size;
+    ssize_t capacity;
     ONDEBUG(uint_t hash_stack;)
     ONDEBUG(uint_t hash_buffer;)
     ONDEBUG(stack_el_t canary2;)
