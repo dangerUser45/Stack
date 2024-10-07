@@ -9,7 +9,7 @@ int main ()
     stack_t Data = {};
     ONDEBUG (Create_file (&Data);)
 
-
+    Ctor (&Data, 4);
 
     Pop (&Data) OR DIE;
     ONDEBUG (Dump (&Data);)
@@ -34,6 +34,7 @@ int Ctor (stack_t* Data, ssize_t capacity ONDEBUG(, const char* name, const char
     ONDEBUG (Data -> name = name;)
     ONDEBUG (Data -> file = file;)
     ONDEBUG (Data -> line = line;)
+    ONDEBUG (Data -> hash_buffer = Hash ();)
     ONDEBUG (Data -> canary2_struct = CANARY_S;)
     ONDEBUG (Canary (Data);)
 
@@ -72,8 +73,8 @@ int Pop (stack_t* Data)
     //CHECK ( , "Pop")
     ONDEBUG (fprintf (Data -> fp, "HERE size = %zd\n", Data -> size);)
 
-$$  if (Data -> size <= 0) return BAD_SIZE;
-$$  ONDEBUG (fprintf (Data -> fp, "RTRTRTR\n");) //!!!
+    if (Data -> size <= 0) return BAD_SIZE;
+    ONDEBUG (fprintf (Data -> fp, "RTRTRTR\n");) //!!!
     if (Data -> size < Data -> capacity / (MAGIC_NUM * MAGIC_NUM) )
     {
         ONDEBUG (fprintf (Data -> fp, "Its realloc_down\n");)

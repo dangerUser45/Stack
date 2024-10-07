@@ -59,7 +59,6 @@ int Fill_Poison (stack_el_t* begin, uint_t quantity)
 int Verificator (stack_t* Data)
 {
     int error = 0;
-
     if (Data == NULL)
     {
         error = error | BAD_POINTER;
@@ -77,6 +76,16 @@ int Verificator (stack_t* Data)
             error = error | BAD_CANARY2_B;
         if (Data->size < 0)
             error = error | BAD_SIZE;     // 2
+
+        uint_t hash_struct = Hash (Data, sizeof (stack_t));
+        uint_t hash_buffer = Hash (Data -> buffer, Data -> (capacity + 2) * sizeof (stack_el_t));
+
+        if (Data -> hash_struct != ???)//!!!
+            error = error | BAD_HASH_STRUCT;
+
+        if (Data -> hash_bufer != hash_buffer)//!!!
+            error = error | BAD_HASH_BUF;
+
     }
 
     if (Data ->capacity < 0)
@@ -124,6 +133,12 @@ int Decoder_error (stack_t* Data, int error, int line, const char* name_func)
     if (error & BAD_CANARY2_B)
         fprintf (Data -> fp, "Canary2_buf is BAD: canary2_buf = %d\n", Data -> buffer[Data -> capacity + 1]);
 
+    if (error & BAD_HASH_STRUCT)
+         fprintf (Data -> fp, "Hash_struct is BAD: hash_struct = %lld\n", Data -> hash_struct);
+
+    if (error & BAD_HASH_BUF)
+         fprintf (Data -> fp, "Hash_buf is BAD: hash_buf = %lld\n", Data -> hash_buffer);
+
     if (error == 0)
         fprintf (Data -> fp, "All it is OK\n");
 
@@ -132,11 +147,14 @@ int Decoder_error (stack_t* Data, int error, int line, const char* name_func)
     return error;
 }
 //==================================================================================================
-/*int Hash (stack_t Data)
+uint_t Hash (const void* ptr, size_t size)
 {
+    uint_t hash = 5381;
+    const char* data = (const char*) ptr;
     for (uint_t i = 0; i < ; ++i)
-
+        hash = hash * 33 ^ data[i];
+    return hash;
 }
 //==================================================================================================
-*/
+
 
