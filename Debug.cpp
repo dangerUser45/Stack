@@ -77,14 +77,14 @@ int Verificator (stack_t* Data)
         if (Data->size < 0)
             error = error | BAD_SIZE;     // 2
 
-        uint_t hash_struct = Hash (Data, sizeof (stack_t));
+        /*uint_t hash_struct = Hash (Data, sizeof (stack_t));
         uint_t hash_buffer = Hash (Data -> buffer, Data -> (capacity + 2) * sizeof (stack_el_t));
 
         if (Data -> hash_struct != ???)//!!!
             error = error | BAD_HASH_STRUCT;
 
         if (Data -> hash_bufer != hash_buffer)//!!!
-            error = error | BAD_HASH_BUF;
+            error = error | BAD_HASH_BUF;*/      //!!! finish it
 
     }
 

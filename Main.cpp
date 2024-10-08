@@ -34,7 +34,6 @@ int Ctor (stack_t* Data, ssize_t capacity ONDEBUG(, const char* name, const char
     ONDEBUG (Data -> name = name;)
     ONDEBUG (Data -> file = file;)
     ONDEBUG (Data -> line = line;)
-    ONDEBUG (Data -> hash_buffer = Hash ();)
     ONDEBUG (Data -> canary2_struct = CANARY_S;)
     ONDEBUG (Canary (Data);)
 
