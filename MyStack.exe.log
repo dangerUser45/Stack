@@ -2385,3 +2385,36 @@ Run file:	X:\mystack.exe
 Directory:	X:\
 
 --------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: X:\MyStack.exe,
+
+ВНЕЗАПНО: signal (22, 0x00): SIGABRT: Аварийное завершение программы, вызвана функция abort(). 
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x00007FF60622FFF0 (64-bit), Flags: Cmdre0, Thread: 0x1910 (Main), GetLastError(): 131 (Попытка поместить указатель на файл перед началом файла), errno: 22 (Invalid argument), _doserrno: 131 (Unknown error). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	TXLib.h
+Compiled:	Oct  9 2024 19:07:52, GNU g++ 13.2.0, std=201703L, MinGW-W64 Runtime 11.0.1 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Oct 09 2024 19:08:01
+
+Run file:	X:\MyStack.exe
+Directory:	X:\
+
+--------------------------------------------------

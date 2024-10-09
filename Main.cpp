@@ -9,7 +9,11 @@ int main ()
     stack_t Data = {};
     ONDEBUG (Create_file (&Data);)
 
-    Ctor (&Data, 4);
+    CTOR (&Data, 4);
+
+
+    Push (&Data, 123345);
+    ONDEBUG (Dump (&Data);)
 
     Pop (&Data) OR DIE;
     ONDEBUG (Dump (&Data);)
@@ -99,7 +103,9 @@ int Dtor (stack_t* Data)
     CHECK (return GENERAL_ERROR;, "Dtor")
 
     free (Data->buffer);
+    Fill_Poison (Data -> buffer ONDEBUG(+1), Data -> capacity);
     ONDEBUG (fprintf(Data ->fp, "зафричилось\n");)
+
 
     CHECK ( , "Dtor") // noreturn because use after free ()
 

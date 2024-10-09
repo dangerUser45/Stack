@@ -151,7 +151,7 @@ uint_t Hash (const void* ptr, size_t size)
 {
     uint_t hash = 5381;
     const char* data = (const char*) ptr;
-    for (uint_t i = 0; i < ; ++i)
+    for (uint_t i = 0; i < size; ++i)
         hash = hash * 33 ^ data[i];
     return hash;
 }

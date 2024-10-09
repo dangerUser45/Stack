@@ -16,8 +16,8 @@
     #define CHECK(code1, code2)
 #endif
 
-
-#ifndef qwe
+/*#define qwe
+#ifdef qwe
 #define HASH(const void* ptr, size_t size)      \
 ({                                              \
     uint_t hash = 5381;                         \
@@ -27,9 +27,9 @@
     hash;                                       \
 })                                              \
 #endif
+*/
 
-
-#define DIE ({ assert(0); 0; })
+#define DIE({ assert(0); 0; })
 #define OR == 0 or
 
 enum code_error
