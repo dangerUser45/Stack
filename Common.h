@@ -57,13 +57,14 @@ const stack_el_t CANARY_S = 77777777;
 
 const int MAGIC_NUM = 2;
 
+
 struct stack_t
 {
     ONDEBUG(stack_el_t canary1_struct;)
     ONDEBUG(const char* name;)
     ONDEBUG(const char* file;)
     ONDEBUG(int line;)
-    ONDEBUG(FILE* fp;)
+    FILE* fp;
 
 
     stack_el_t* buffer;
@@ -72,5 +73,7 @@ struct stack_t
     ONDEBUG(uint_t hash_struct;)
     ONDEBUG(uint_t hash_buffer;)
     ONDEBUG(stack_el_t canary2_struct;)
-};
 
+
+};
+//
