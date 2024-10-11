@@ -7,38 +7,39 @@
 int main ()
 {
     stack_t Data = {};
-    ONDEBUG (Create_file (&Data);)
+    Create_file (&Data);
 
     CTOR (&Data, 1);
+    Dump (&Data);
 
     Push (&Data, 15) OR DIE;
-    ONDEBUG (Dump (&Data);)
+    Dump (&Data);
 
     Pop (&Data) OR DIE;
-    ONDEBUG (Dump (&Data);)
+    Dump (&Data);
 
 
     Push (&Data, 30) OR DIE;
-    ONDEBUG (Dump (&Data);)
+    Dump (&Data);
 
     Push (&Data, 45) OR DIE;
-    ONDEBUG (Dump (&Data);)
+    Dump (&Data);
 
     Pop (&Data) OR DIE;
-    ONDEBUG (Dump (&Data);)
+    Dump (&Data);
 
     Pop (&Data) OR DIE;
-    ONDEBUG (Dump (&Data);)
+    Dump (&Data);
 
     Dtor (&Data) OR DIE;
-    ONDEBUG (Dump (&Data);)
+    Dump (&Data);
 
     return NO_ERROR_;
 }
 
 int Ctor (stack_t* Data, ssize_t capacity ONDEBUG(, const char* name, const char* file, int line))
 {
-    if (Data <= 0) return BAD_POINTER;
+    if (Data == NULL) return BAD_POINTER;
     if (capacity <= 0) return BAD_CAPACITY;
 
     Data -> capacity = capacity;

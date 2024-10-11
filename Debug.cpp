@@ -22,19 +22,19 @@ int Dump (stack_t* Data)
     fprintf (fp, "//================================================================================================\n");
 
     fprintf (fp, "\tSTRUCT:\n");
-    fprintf (fp, "  canary1_struct = %d\n", Data -> canary1_struct);
-    fprintf (fp, "  name of struct = %s\n", Data -> name);
-    fprintf (fp, "  file = %s\n", Data -> file);
+    ONDEBUG(fprintf (fp, "  canary1_struct = %d\n", Data -> canary1_struct);)
+    ONDEBUG(fprintf (fp, "  name of struct = %s\n", Data -> name);)
+    ONDEBUG(fprintf (fp, "  file = %s\n", Data -> file);)
     fprintf (fp, "  buffer = %p\n", Data -> buffer);
     fprintf (fp, "  size = %zd\n", Data -> size);
     fprintf (fp, "  capacity = %zd\n", Data -> capacity);
-    fprintf (fp, "  canary2_struct = %d\n", Data -> canary2_struct);
+    ONDEBUG(fprintf (fp, "  canary2_struct = %d\n", Data -> canary2_struct);)
 
     fprintf (fp, "\t\t\t\tSTACK:\n");
-    fprintf (fp, "\tcanary1_buf) <%016d> --- address: %p\n", Data -> buffer[0], Data -> buffer);
+    ONDEBUG(fprintf (fp, "\tcanary1_buf) <%016d> --- address: %p\n", Data -> buffer[0], Data -> buffer);)
     for (ssize_t i = 1; i < Data -> capacity + 1; ++i)
         fprintf (fp, "\t\t  %zd) <%016d> --- address: %p\n", i, Data -> buffer[i], Data -> buffer + i);
-    fprintf (fp, "\tcanary2_buf) <%016d> --- address: %p\n", Data -> buffer[Data -> capacity + 1], Data -> buffer + Data -> capacity + 1);
+    ONDEBUG(fprintf (fp, "\tcanary2_buf) <%016d> --- address: %p\n", Data -> buffer[Data -> capacity + 1], Data -> buffer + Data -> capacity + 1);)
     fprintf (fp, "\n");
     fprintf (fp,"//================================================================================================\n");
     return 0;
@@ -94,11 +94,11 @@ int Verificator (stack_t* Data)
     if (Data -> fp == NULL)
         error = error | FILE_NULL;     // 4
 
-    if (Data -> canary1_struct != CANARY_S)
-        error = error | BAD_CANARY1_S;     // 5
+    ONDEBUG(if (Data -> canary1_struct != CANARY_S)
+        error = error | BAD_CANARY1_S;)     // 5
 
-    if (Data -> canary2_struct != CANARY_S)
-        error = error | BAD_CANARY2_S;     // 6
+    ONDEBUG(if (Data -> canary2_struct != CANARY_S)
+        error = error | BAD_CANARY2_S;)     // 6
 
     return error;
 }
@@ -121,23 +121,23 @@ int Decoder_error (stack_t* Data, int error, int line, const char* name_func)
     if (error & FILE_NULL)
         fprintf (Data -> fp, "File pointer = NULL: file pointer = %p\n", Data -> fp);
 
-    if (error & BAD_CANARY1_S)
-        fprintf (Data -> fp, "Canary1_struct is BAD: canary1_struct = %d\n", Data -> canary1_struct);
+    ONDEBUG(if (error & BAD_CANARY1_S)
+        fprintf (Data -> fp, "Canary1_struct is BAD: canary1_struct = %d\n", Data -> canary1_struct);)
 
-    if (error & BAD_CANARY2_S)
-        fprintf (Data -> fp, "Canary2_struct is BAD: canary2_struct = %d\n", Data -> canary2_struct);
+    ONDEBUG(if (error & BAD_CANARY2_S)
+        fprintf (Data -> fp, "Canary2_struct is BAD: canary2_struct = %d\n", Data -> canary2_struct);)
 
-    if (error & BAD_CANARY1_B)
-        fprintf (Data -> fp, "Canary1_buf is BAD: canary1_buf = %d\n", Data -> buffer[0]);
+    ONDEBUG(if (error & BAD_CANARY1_B)
+        fprintf (Data -> fp, "Canary1_buf is BAD: canary1_buf = %d\n", Data -> buffer[0]);)
 
-    if (error & BAD_CANARY2_B)
-        fprintf (Data -> fp, "Canary2_buf is BAD: canary2_buf = %d\n", Data -> buffer[Data -> capacity + 1]);
+    ONDEBUG(if (error & BAD_CANARY2_B)
+        fprintf (Data -> fp, "Canary2_buf is BAD: canary2_buf = %d\n", Data -> buffer[Data -> capacity + 1]);)
 
-    if (error & BAD_HASH_STRUCT)
-         fprintf (Data -> fp, "Hash_struct is BAD: hash_struct = %lld\n", Data -> hash_struct);
+    ONDEBUG(if (error & BAD_HASH_STRUCT)
+         fprintf (Data -> fp, "Hash_struct is BAD: hash_struct = %lld\n", Data -> hash_struct);)
 
-    if (error & BAD_HASH_BUF)
-         fprintf (Data -> fp, "Hash_buf is BAD: hash_buf = %lld\n", Data -> hash_buffer);
+    ONDEBUG(if (error & BAD_HASH_BUF)
+         fprintf (Data -> fp, "Hash_buf is BAD: hash_buf = %lld\n", Data -> hash_buffer);)
 
     if (error == 0)
         fprintf (Data -> fp, "All it is OK\n");

@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <assert.h>
 
-#define DEBUG
+
 
 #ifdef  DEBUG
     #define ONDEBUG( ... ) __VA_ARGS__
@@ -63,7 +63,7 @@ struct stack_t
     ONDEBUG(const char* name;)
     ONDEBUG(const char* file;)
     ONDEBUG(int line;)
-    ONDEBUG(FILE* fp;)
+    FILE* fp;
 
 
     stack_el_t* buffer;
