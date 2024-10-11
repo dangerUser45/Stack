@@ -6,3 +6,4 @@ int Decoder_error (stack_t* Data, int error, int line, const char* name_func);
 int Verificator (stack_t* Data);
 uint_t Hash (const void* ptr, size_t size);
 
+

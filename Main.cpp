@@ -1,6 +1,6 @@
 
 #include "Common.h"
-#include "Main.h"
+#include "Stack.h"
 #include "Debug.h"
 
 
@@ -9,10 +9,22 @@ int main ()
     stack_t Data = {};
     ONDEBUG (Create_file (&Data);)
 
-    CTOR (&Data, 4);
+    CTOR (&Data, 1);
+
+    Push (&Data, 15) OR DIE;
+    ONDEBUG (Dump (&Data);)
+
+    Pop (&Data) OR DIE;
+    ONDEBUG (Dump (&Data);)
 
 
-    Push (&Data, 123345);
+    Push (&Data, 30) OR DIE;
+    ONDEBUG (Dump (&Data);)
+
+    Push (&Data, 45) OR DIE;
+    ONDEBUG (Dump (&Data);)
+
+    Pop (&Data) OR DIE;
     ONDEBUG (Dump (&Data);)
 
     Pop (&Data) OR DIE;
@@ -26,6 +38,8 @@ int main ()
 
 int Ctor (stack_t* Data, ssize_t capacity ONDEBUG(, const char* name, const char* file, int line))
 {
+    if (Data <= 0) return BAD_POINTER;
+    if (capacity <= 0) return BAD_CAPACITY;
 
     Data -> capacity = capacity;
     Data -> size = 0;
@@ -102,8 +116,8 @@ int Dtor (stack_t* Data)
 
     CHECK (return GENERAL_ERROR;, "Dtor")
 
-    free (Data->buffer);
     Fill_Poison (Data -> buffer ONDEBUG(+1), Data -> capacity);
+    free (Data->buffer);
     ONDEBUG (fprintf(Data ->fp, "зафричилось\n");)
 
 

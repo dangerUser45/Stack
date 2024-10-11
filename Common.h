@@ -29,7 +29,7 @@
 #endif
 */
 
-#define DIE({ assert(0); 0; })
+#define DIE ({ assert(0); 0; })
 #define OR == 0 or
 
 enum code_error
@@ -47,19 +47,15 @@ enum code_error
         BAD_POINTER      = (1<<9),
         BAD_HASH_STRUCT  = (1<<10),
         BAD_HASH_BUF     = (1<<11)
-
-
-
     };
+
 typedef int stack_el_t;
 typedef long long unsigned int uint_t;
 const stack_el_t POISON = -666;
 const stack_el_t CANARY_B = -123401234;
 const stack_el_t CANARY_S = 77777777;
 
-
 const int MAGIC_NUM = 2;
-
 
 struct stack_t
 {
@@ -76,7 +72,5 @@ struct stack_t
     ONDEBUG(uint_t hash_struct;)
     ONDEBUG(uint_t hash_buffer;)
     ONDEBUG(stack_el_t canary2_struct;)
-
-
 };
-//
+
