@@ -3,7 +3,8 @@
 #include "Stack.h"
 #include "Debug.h"
 
-
+// проверка check
+//
 int main ()
 {
     stack_t Data = {};
