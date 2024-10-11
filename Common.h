@@ -4,15 +4,15 @@
 #include <stdlib.h>
 #include <assert.h>
 
-
+#define DEBUG
 
 #ifdef  DEBUG
     #define ONDEBUG( ... ) __VA_ARGS__
-    #define CTOR(Data, capacity) Ctor (Data, capacity, #Data, __FILE__, __LINE__)
+    #define STACK_CTOR(Data, capacity) Stack_Ctor (Data, capacity, #Data, __FILE__, __LINE__)
     #define CHECK(code1, code2) { int error = Verificator (Data); Decoder_error (Data, error, __LINE__, code2);  if (error != 0) {code1;}}
 #else
     #define ONDEBUG( ... )
-    #define CTOR(Data, capacity) Ctor (Data, capacity);
+    #define CTOR(Data, capacity) Stack_Ctor (Data, capacity);
     #define CHECK(code1, code2)
 #endif
 

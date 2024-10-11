@@ -32,7 +32,7 @@ int Dump (stack_t* Data)
 
     fprintf (fp, "\t\t\t\tSTACK:\n");
     ONDEBUG(fprintf (fp, "\tcanary1_buf) <%016d> --- address: %p\n", Data -> buffer[0], Data -> buffer);)
-    for (ssize_t i = 1; i < Data -> capacity + 1; ++i)
+    for (ssize_t i = 0 ONDEBUG(+ 1); i < Data -> capacity ONDEBUG(+ 1); ++i)
         fprintf (fp, "\t\t  %zd) <%016d> --- address: %p\n", i, Data -> buffer[i], Data -> buffer + i);
     ONDEBUG(fprintf (fp, "\tcanary2_buf) <%016d> --- address: %p\n", Data -> buffer[Data -> capacity + 1], Data -> buffer + Data -> capacity + 1);)
     fprintf (fp, "\n");
@@ -134,10 +134,10 @@ int Decoder_error (stack_t* Data, int error, int line, const char* name_func)
         fprintf (Data -> fp, "Canary2_buf is BAD: canary2_buf = %d\n", Data -> buffer[Data -> capacity + 1]);)
 
     ONDEBUG(if (error & BAD_HASH_STRUCT)
-         fprintf (Data -> fp, "Hash_struct is BAD: hash_struct = %lld\n", Data -> hash_struct);)
+         fprintf (Data -> fp, "Hash_struct is BAD: hash_struct = %llu\n", Data -> hash_struct);)
 
     ONDEBUG(if (error & BAD_HASH_BUF)
-         fprintf (Data -> fp, "Hash_buf is BAD: hash_buf = %lld\n", Data -> hash_buffer);)
+         fprintf (Data -> fp, "Hash_buf is BAD: hash_buf = %llu\n", Data -> hash_buffer);)
 
     if (error == 0)
         fprintf (Data -> fp, "All it is OK\n");
