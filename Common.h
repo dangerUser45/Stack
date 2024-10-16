@@ -4,16 +4,19 @@
 #include <stdlib.h>
 #include <assert.h>
 
-#define DEBUG
+#define DEBUG 1
 
-#ifdef  DEBUG
+#if  (DEBUG == 1)
     #define ONDEBUG( ... ) __VA_ARGS__
     #define STACK_CTOR(Data, capacity) Stack_Ctor (Data, capacity, #Data, __FILE__, __LINE__)
     #define CHECK(code1, code2) { int error = Verificator (Data); Decoder_error (Data, error, __LINE__, code2);  if (error != 0) {code1;}}
+    #define ASSERT_ {if (Data == NULL) return BAD_POINTER;      \
+                     if (Data -> buffer == NULL) return BUFFER_NULL;}
 #else
     #define ONDEBUG( ... )
-    #define CTOR(Data, capacity) Stack_Ctor (Data, capacity);
+    #define STACK_CTOR(Data, capacity) Stack_Ctor (Data, capacity)
     #define CHECK(code1, code2)
+    #define ASSERT_ 
 #endif
 
 /*#define qwe
@@ -63,7 +66,7 @@ struct stack_t
     ONDEBUG(const char* name;)
     ONDEBUG(const char* file;)
     ONDEBUG(int line;)
-    FILE* fp;
+    
 
 
     stack_el_t* buffer;

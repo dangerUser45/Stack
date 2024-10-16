@@ -12,5 +12,5 @@ Debug.o : Debug.cpp
 	$(Compiler) -c Debug.cpp -o Debug.o
 
 clean :
-	rm -f *.o
+	del *.o
 

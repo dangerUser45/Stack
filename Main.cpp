@@ -2,18 +2,46 @@
 #include "Common.h"
 #include "Stack.h"
 #include "Debug.h"
-
+                                                                                                   
 
 int main ()
 {
     stack_t Data = {};
-    Create_file (&Data);
 
-    STACK_CTOR (&Data, 1);
-    Dump (&Data);
+    Create_file () OR DIE;
 
-    Stack_Dtor (&Data) OR DIE;
-    Dump (&Data);
+    STACK_CTOR (&Data, 1) OR DIE;
+    Dump (&Data); 
+
+    Stack_Push (&Data, 100) OR DIE;
+    ONDEBUG (Dump (&Data);)
+
+    Stack_Push (&Data, 200) OR DIE;
+    ONDEBUG (Dump (&Data);)
+
+    Stack_Push (&Data, 300) OR DIE;
+    ONDEBUG (Dump (&Data);)
+
+    Stack_Push (&Data, 400) OR DIE;
+    ONDEBUG (Dump (&Data);)
+
+    Stack_Push (&Data, 500) OR DIE;
+    ONDEBUG (Dump (&Data);)
+    
+    Stack_Pop (&Data) OR DIE;
+    ONDEBUG (Dump (&Data);)
+
+    Stack_Pop (&Data) OR DIE;
+    ONDEBUG (Dump (&Data);)
+
+    Stack_Pop (&Data) OR DIE;
+    ONDEBUG (Dump (&Data);)
+
+    Stack_Pop (&Data) OR DIE;
+    ONDEBUG (Dump (&Data);)
+
+    Stack_Pop (&Data) OR DIE;
+    ONDEBUG (Dump (&Data);)
 
     Stack_Dtor (&Data) OR DIE;
     Dump (&Data);
@@ -32,7 +60,7 @@ int Stack_Ctor (stack_t* Data, ssize_t capacity ONDEBUG(, const char* name, cons
 
     if (buffer == NULL) return BUFFER_NULL;
     Data -> buffer = buffer;
-    fprintf (Data ->fp, "data-> buffer = %p\n", Data -> buffer); // !!!
+    fprintf (Log_File, "data-> buffer = %p\n", Data -> buffer); // !!!
     ONDEBUG (Data -> canary1_struct = CANARY_S;)
     ONDEBUG (Data -> name = name;)
     ONDEBUG (Data -> file = file;)
@@ -54,12 +82,12 @@ int Stack_Push (stack_t* Data, stack_el_t elem)
 
     if (Data -> size >= Data -> capacity - 1)
     {
-        fprintf (Data -> fp, "its realloc up\n");
+        fprintf (Log_File, "its realloc up\n");
         Stack_Realloc_Up (Data);
         ONDEBUG (Fill_Poison (Data -> buffer + Data -> size + 1, Data -> capacity);)
         ONDEBUG (Canary (Data);)
     }
-    ONDEBUG (fprintf (Data -> fp, "\t\t\tsize = %zd\n", Data -> size);)
+    ONDEBUG (fprintf (Log_File, "\t\t\tsize = %zd\n", Data -> size);)
     ssize_t size = Data->size;
     Data -> buffer [size  ONDEBUG( + 1)] = elem;
     Data -> size += 1;
@@ -73,21 +101,21 @@ int Stack_Pop (stack_t* Data)
 {
 
     CHECK ( , "Stack_Pop")
-    fprintf (Data -> fp, "HERE size = %zd\n", Data -> size); // !!!
+    fprintf (Log_File, "HERE size = %zd\n", Data -> size); // !!!
 
     if (Data -> size <= 0) return BAD_SIZE;
-    ONDEBUG (fprintf (Data -> fp, "RTRTRTR\n");) //!!!
+    ONDEBUG (fprintf (Log_File, "RTRTRTR\n");) //!!!
     if (Data -> size < Data -> capacity / (MAGIC_NUM * MAGIC_NUM) )
     {
-        fprintf (Data -> fp, "Its realloc_down\n"); // !!!
+        fprintf (Log_File, "Its realloc_down\n"); // !!!
         Stack_Realloc_Down (Data);
         ONDEBUG (Fill_Poison (Data -> buffer + Data -> size + 1, Data -> capacity);)
         ONDEBUG (Canary (Data);)
     }
 
     ssize_t size = Data -> size;
-    fprintf (Data -> fp, "size = %zd\n", size); // !!!
-    fprintf(Data -> fp, "addr_popa = %p\n",  Data -> buffer +size ); // !!!
+    fprintf (Log_File, "size = %zd\n", size); // !!!
+    fprintf(Log_File, "addr_popa = %p\n",  Data -> buffer +size ); // !!!
 
     Data -> buffer [size - 1 ONDEBUG (+1)] = POISON;
     Data -> size -= 1;
@@ -98,16 +126,17 @@ int Stack_Pop (stack_t* Data)
 //==================================================================================================
 int Stack_Dtor (stack_t* Data)
 {
-
-    CHECK (return GENERAL_ERROR;, "Stack_Dtor")
+ $$
+ $$ CHECK (return GENERAL_ERROR;, "Stack_Dtor")
+ $$  
 
     Fill_Poison (Data -> buffer ONDEBUG(+1), Data -> capacity);
-    Stack_free (Data->buffer); printf ("Data -> buffer = %p", Data -> buffer); // !!!
+    Stack_free (&Data -> buffer);
 
-    ONDEBUG (fprintf(Data ->fp, "зафричилось\n");)
+    ONDEBUG (fprintf(Log_File, "зафричилось\n");)
 
 
-    CHECK ( , "Stack_Dtor") // noreturn because use after free ()
+    CHECK ( , "Stack_Dtor") // noreturn because use after free () !!!
 
     return NO_ERROR_;
 }
@@ -140,12 +169,12 @@ int Stack_Realloc_Down (stack_t* Data)
 //==================================================================================================
 int Stack_free (void* ptr)
 {
-    stack_t* Data = *((stack_t*) ptr);
-    if (Data != NULL)
+    stack_t** Data = (stack_t**) ptr;
+    if (*Data != NULL)
     {
         printf ("HERE\n");
-        free (Data);
-        Data = NULL;
+        free (*Data);
+        *Data = NULL;
     }
     return NO_ERROR;
 }
