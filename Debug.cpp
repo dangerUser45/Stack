@@ -16,6 +16,13 @@ int Create_file ()
     
     return NO_ERROR;/* code_error */
 }
+
+int Close_file ()
+{
+    fclose (Log_File);
+    Log_File = NULL;
+    return NO_ERROR;
+}
 //==================================================================================================
 int Dump (stack_t* Data)
 {
@@ -74,12 +81,12 @@ int Fill_Poison (stack_el_t* begin, uint_t quantity)
 //==================================================================================================
 int Verificator (stack_t* Data)
 {
-$$  int error = 0;
+    int error = 0;
     if (Data == NULL)
     {
         error = error | BAD_POINTER;
         return error;
-$$  }
+    }
 
     if (Data->buffer == NULL)               // 1111'1111
         error = error | BUFFER_NULL;     // 1 csb

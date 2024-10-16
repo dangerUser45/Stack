@@ -44,7 +44,8 @@ int main ()
     ONDEBUG (Dump (&Data);)
 
     Stack_Dtor (&Data) OR DIE;
-    Dump (&Data);
+
+    Close_file ();
 
     return NO_ERROR_;
 }
@@ -126,15 +127,14 @@ int Stack_Pop (stack_t* Data)
 //==================================================================================================
 int Stack_Dtor (stack_t* Data)
 {
- $$
- $$ CHECK (return GENERAL_ERROR;, "Stack_Dtor")
- $$  
+   
+    CHECK (return GENERAL_ERROR;, "Stack_Dtor")
+     
 
     Fill_Poison (Data -> buffer ONDEBUG(+1), Data -> capacity);
     Stack_free (&Data -> buffer);
 
     ONDEBUG (fprintf(Log_File, "зафричилось\n");)
-
 
     CHECK ( , "Stack_Dtor") // noreturn because use after free () !!!
 
