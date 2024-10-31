@@ -1,10 +1,11 @@
+#pragma once
 
 #include "TXLib.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>
 
-#define DEBUG 1
+#define DEBUG 0
 
 #if  (DEBUG == 1)
     #define ONDEBUG( ... ) __VA_ARGS__

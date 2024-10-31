@@ -1,3 +1,7 @@
+#include "TXLib.h"
+#include "Common.h"
+#include "Stack.h"
+#include "Debug.h"
 
 int main ()
 {
@@ -9,34 +13,34 @@ int main ()
     Dump (&Data); 
 
     Stack_Push (&Data, 100) OR DIE;
-    ONDEBUG (Dump (&Data);)
+    Dump (&Data);
 
     Stack_Push (&Data, 200) OR DIE;
-    ONDEBUG (Dump (&Data);)
+    Dump (&Data);
 
     Stack_Push (&Data, 300) OR DIE;
-    ONDEBUG (Dump (&Data);)
+   Dump (&Data);
 
     Stack_Push (&Data, 400) OR DIE;
-    ONDEBUG (Dump (&Data);)
+    Dump (&Data);
 
     Stack_Push (&Data, 500) OR DIE;
-    ONDEBUG (Dump (&Data);)
+    Dump (&Data);
     
     Stack_Pop (&Data) OR DIE;
-    ONDEBUG (Dump (&Data);)
+    Dump (&Data);
 
     Stack_Pop (&Data) OR DIE;
-    ONDEBUG (Dump (&Data);)
+    Dump (&Data);
 
     Stack_Pop (&Data) OR DIE;
-    ONDEBUG (Dump (&Data);)
+    Dump (&Data);
 
     Stack_Pop (&Data) OR DIE;
-    ONDEBUG (Dump (&Data);)
+    Dump (&Data);
 
     Stack_Pop (&Data) OR DIE;
-    ONDEBUG (Dump (&Data);)
+    Dump (&Data);
 
     Stack_Dtor (&Data) OR DIE;
 

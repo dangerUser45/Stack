@@ -1,3 +1,5 @@
+#pragma once
+
 int Create_file ();
 int Close_file ();
 int Dump (stack_t* Data);
